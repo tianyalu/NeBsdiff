@@ -84,7 +84,7 @@
 
 bsdiff 下载地址： http://www.daemonology.net/bsdiff/
 
-#### 2.1.1 下载
+#### 2.1.1 下载`bsdiff-4.3`
 
 ```bash
 wget http://www.daemonology.net/bsdiff/bsdiff-4.3.tar.gz
@@ -101,7 +101,7 @@ ERROR 403: Forbidden.
 
 无奈只好使用别人下载好的文件`bsdiff-4.3.tar.gz`（在`resources`目录下）。
 
-#### 2.1.2 上传到服务器
+#### 2.1.2 上传`bsdiff-4.3`到服务器
 
 在**本地物理机终端上**使用如下命令：
 
@@ -165,9 +165,9 @@ bsdiff  bsdiff.1  bsdiff.c  bspatch  bspatch.1  bspatch.c  Makefile
 
 ```bash
 # 查看bsdiff的用法
-# ./bsdiff --help
-bsdiff: usage: ./bsdiff oldfile newfile patchfile
-# ./bsdiff old.apk new.apk patch.diff
+./bsdiff --help
+# bsdiff: usage: ./bsdiff oldfile newfile patchfile
+./bsdiff old.apk new.apk patch.diff
 ```
 
 同样采用2.1.2所述方法（交换`scp`后面两参数的位置），将生成的差量包`patch.diff`下载到手机`SD`卡上。
